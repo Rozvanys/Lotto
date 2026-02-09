@@ -11,11 +11,12 @@ namespace Lotto
         static int[] LottoszamokGeneralasa()
         {
             Random rnd = new Random();
-            int[] Szamok = new int[5];
-            for (int i = 0; i < Szamok.Length; i++)
+            int[] szamok = new int[5];
+            for (int i = 0; i < szamok.Length; i++)
             {
-                Szamok[i] = rnd.Next(1, 91);
+                szamok[i] = rnd.Next(1, 91);
             }
+            return szamok;
         }
 
         static void Main(string[] args)
