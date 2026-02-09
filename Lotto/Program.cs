@@ -8,8 +8,19 @@ namespace Lotto
 {
     internal class Program
     {
+        static void LottoszamokGeneralasa()
+        {
+            Random rnd = new Random();
+            int[] Szamok = new int[5];
+            for (int i = 0; i < Szamok.Length; i++)
+            {
+                Szamok[i] = rnd.Next(1, 91);
+            }
+        }
+
         static void Main(string[] args)
         {
+            LottoszamokGeneralasa();
         }
     }
 }
