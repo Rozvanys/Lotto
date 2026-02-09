@@ -18,10 +18,21 @@ namespace Lotto
             }
             return szamok;
         }
+        static int[] SzamBekeres(int[] szamok)
+            {
+            int[] bekertSzamok = new int[5];
+            for (int i = 0; i < bekertSzamok.Length; i++)
+            {
+                Console.WriteLine("Kérem adja meg a(z) {0}. számot: ", i + 1);
+                bekertSzamok[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            return bekertSzamok;
+        }
 
-        static void Main(string[] args)
+static void Main(string[] args)
         {
             int [] nyeroszamok = LottoszamokGeneralasa();
+            Console.WriteLine("A nyerőszámok: {0}", string.Join(", ", nyeroszamok));
         }
     }
 }
