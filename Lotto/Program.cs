@@ -8,7 +8,7 @@ namespace Lotto
 {
     internal class Program
     {
-        static void LottoszamokGeneralasa()
+        static int[] LottoszamokGeneralasa()
         {
             Random rnd = new Random();
             int[] Szamok = new int[5];
@@ -20,7 +20,7 @@ namespace Lotto
 
         static void Main(string[] args)
         {
-            LottoszamokGeneralasa();
+            int [] nyeroszamok = LottoszamokGeneralasa();
         }
     }
 }
